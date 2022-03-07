@@ -18,4 +18,5 @@ for _ in range(2):
     computer_card.append(deal_card())
 
 
-def calculate_score()
+def calculate_score(cards):
+    return sum(cards)
