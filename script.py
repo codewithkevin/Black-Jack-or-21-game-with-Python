@@ -28,3 +28,7 @@ def calculate_score(cards):
         cards.append(1)
 
     return sum(cards)
+
+
+user_score = calculate_score(user_card)
+computer_score = calculate_score(computer_card)
