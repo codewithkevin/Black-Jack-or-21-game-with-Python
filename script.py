@@ -8,3 +8,5 @@ def deal_card():
 
     card = random.choice(cards)
     return card 
+
+    
