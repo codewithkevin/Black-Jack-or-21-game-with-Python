@@ -13,7 +13,8 @@ user_card = []
 computer_card = []
 
 for _ in range(2):
-    new_card = deal_card()
-    user_card.append(new_card)
+    user_card.append(deal_card())
+    
+    computer_card.append(deal_card())
 
 print(user_card)
