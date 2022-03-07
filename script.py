@@ -14,7 +14,8 @@ computer_card = []
 
 for _ in range(2):
     user_card.append(deal_card())
-    
+
     computer_card.append(deal_card())
 
-print(user_card)
+
+def calculate_score()
