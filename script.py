@@ -19,4 +19,7 @@ for _ in range(2):
 
 
 def calculate_score(cards):
+
+    if sum(cards)
+
     return sum(cards)
