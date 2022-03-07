@@ -11,6 +11,7 @@ def deal_card():
 
 user_card = []
 computer_card = []
+game_over = False
 
 for _ in range(2):
     user_card.append(deal_card())
@@ -32,3 +33,5 @@ def calculate_score(cards):
 
 user_score = calculate_score(user_card)
 computer_score = calculate_score(computer_card)
+
+
