@@ -35,3 +35,5 @@ user_score = calculate_score(user_card)
 computer_score = calculate_score(computer_card)
 
 
+if user_score == 0 or computer_score == 0 or user_score > 21:
+    game_over = True
