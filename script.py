@@ -29,9 +29,12 @@ def calculate_score(cards):
         cards.append(1)
 
     return sum(cards)
-    
 
-while not end_game:
+def compare(user_score, computer_score):
+    if user_score == computer_score
+        return "Draw"
+
+while not game_over:
 
     user_score = calculate_score(user_card)
     computer_score = calculate_score(computer_card)
@@ -51,3 +54,8 @@ while not end_game:
 
         else:
             game_over = True        
+
+
+while computer_score != 0 and computer_score < 17:
+    computer_card.append(deal_card())      
+    computer_score = calculate_score(computer_card)      
