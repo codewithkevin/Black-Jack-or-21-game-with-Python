@@ -46,6 +46,12 @@ def compare(user_score, computer_score):
     elif computer_score > 21: 
         return "You won, computer went over"  
 
+    elif computer_score < user_score:
+        return "You won"    
+
+    else:
+        return "You lost"    
+
 
 while not game_over:
 
