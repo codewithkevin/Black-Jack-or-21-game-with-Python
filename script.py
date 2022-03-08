@@ -31,8 +31,14 @@ def calculate_score(cards):
     return sum(cards)
 
 def compare(user_score, computer_score):
-    if user_score == computer_score
+    if user_score == computer_score:
         return "Draw"
+
+    elif computer_score == 0:
+        return "Lose, Computer has a blck Jack"
+
+    elif user_score == 0:
+        return    
 
 while not game_over:
 
