@@ -40,7 +40,10 @@ def compare(user_score, computer_score):
     elif user_score == 0:
         return  "Win with Blacjack"  
 
-    elif user_score > 21:   
+    elif user_score > 21:
+        return "You went over. You lose"   
+
+    el    
 
 
 while not game_over:
