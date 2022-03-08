@@ -29,14 +29,25 @@ def calculate_score(cards):
         cards.append(1)
 
     return sum(cards)
+    
+
+while not end_game:
+
+    user_score = calculate_score(user_card)
+    computer_score = calculate_score(computer_card)
+
+    print(f"Your cards: {user_card}, current score: {user_score}")
+    print(f"Computer's first card: {computer_card[0]}")
 
 
-user_score = calculate_score(user_card)
-computer_score = calculate_score(computer_card)
+    if user_score == 0 or computer_score == 0 or user_score > 21:
+        game_over = True
 
-print(f"Your cards: {user_card}, current score: {user_score}")
-print(f"Computer's first card: {computer_card[0]}")
+    else:
+        last_deal = input("Type 'y' to get another card, type 'n' to pass:\n")
 
+        if last_deal == 'y':
+            user_card.append(deal_card())
 
-if user_score == 0 or computer_score == 0 or user_score > 21:
-    game_over = True
+        else:
+            game_over = True        
